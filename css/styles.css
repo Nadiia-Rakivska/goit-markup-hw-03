@@ -30,9 +30,8 @@ img {
 
 .container-header {
   display: flex;
-  justify-content: space-around;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  justify-content: space-between;
+
 }
 
 .navigation {
@@ -45,7 +44,7 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
-  width: 261px;
+
 }
 
 .address-list {
@@ -86,16 +85,15 @@ img {
 
 
 .nav-list-a {
-
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2e2f42;
-    padding-top: 24px;
+  padding-top: 24px;
   padding-bottom: 24px;
-
 }
 
 .nav-list-a:focus {
@@ -112,12 +110,15 @@ img {
 }
 
 .address-cont {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-item:first-child {
@@ -136,10 +137,7 @@ img {
   list-style-type: none;
 }
 
-.container-title {
-  display: block;
-  justify-items: center;
-}
+
 
 .title {
   background-color: #2E2F42;
@@ -182,9 +180,9 @@ img {
   background-color: #404BBF;
 }
 
-.container-advantages {
+/* .container-advantages {
   display: block;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -207,8 +205,7 @@ img {
 .advantages-list {
   display: flex;
   padding-left: 0;
-  justify-content: space-between;
-  margin: 0 141px;
+
 }
 
 .advantages-list-item {
@@ -240,9 +237,7 @@ img {
   letter-spacing: 0.02em
 }
 
-.container-our-team {
-  justify-items: center;
-}
+
 
 .our-team {
   background-color: #f4f4fd;
@@ -265,7 +260,6 @@ img {
   list-style-type: none;
   padding-left: 0;
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .our-team-list {
