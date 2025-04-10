@@ -17,9 +17,8 @@ img {
 
 }
 .container {
-
-
-  padding: 0 15px 0 15px;
+padding-left: 15px;
+ padding-right: 15px;
   width: 1158px;
   margin: 0 auto;
   
@@ -205,6 +204,9 @@ margin: 0;
   justify-content: space-between;
   margin: 0 141px;
 }
+.advantages-list-item{
+  width: calc((100% - 72px) / 4);
+}
 .advantages-list-item:not(:last-child) {
 margin-right: 24px;
 }
@@ -288,8 +290,7 @@ font-weight: 400;
   color: #434455;
 }
 .container-portfolio {
-padding-top: 120px;
-  padding-bottom: 120px;
+padding: 120px 0 120px 0;
 }
 .our-portfolio-title{
     font-weight: 700;
