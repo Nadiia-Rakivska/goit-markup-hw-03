@@ -9,10 +9,19 @@ body {
 h1, h2 ,h3, p {
   margin: 0;
 }
+img {
+  display: block;
+}
+.menu {
+  border-bottom: 1px solid #e7e9fc;
+
+}
 .container {
-  max-width: 1440px;
-  margin: 0;
+
+
   padding: 0 15px 0 15px;
+  width: 1158px;
+  margin: 0 auto;
   
 }
 .container-header {
@@ -20,16 +29,18 @@ h1, h2 ,h3, p {
     justify-content: space-around;
     padding-top: 24px;
       padding-bottom: 24px;
+      
     
 }
 .navigation {
     display: flex;
       justify-content: space-between;
+      align-items: center
       
 }
 .navigation-list {
   display: flex;
-    justify-content: space-between;
+
     padding: 0;
     margin: 0;
     width: 261px;
@@ -64,16 +75,23 @@ margin: 0;
 
 .nav-list {
   list-style-type: none;
+  
+}
+.nav-list:not(:last-child) {
+  margin-right: 40px;
+
 }
 
-.nav-list>a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #2e2f42;
 
+.nav-list-a{
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-list-a:focus {
   color: #404bbf;
@@ -110,16 +128,18 @@ margin: 0;
 .address>ul {
   list-style-type: none;
 }
+
 .container-title {
   display: block;
   justify-items: center;
-  padding-bottom: 188px;
-padding-top: 188px;
+
 
 }
 
 .title {
   background-color: #2E2F42;
+  padding-top: 188px;
+  padding-bottom: 188px
 }
 
 .title-t {
@@ -144,7 +164,11 @@ padding-top: 188px;
   background-color: #4d5ae5;
   cursor: pointer;
   border-radius: 4px;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .servise:hover {
@@ -154,10 +178,9 @@ padding-top: 188px;
   background-color: #404BBF;
 }
 .container-advantages {
-  margin-top: 120px;
-  margin-bottom: 120px;
+
   display: block;
-    justify-items: center;
+
     
 }
 .visually-hidden {
@@ -172,6 +195,10 @@ padding-top: 188px;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px
+}
 .advantages-list {
   display: flex;
   padding-left: 0;
@@ -179,7 +206,7 @@ padding-top: 188px;
   margin: 0 141px;
 }
 .advantages-list-item:not(:last-child) {
-  padding-right: 24px;
+margin-right: 24px;
 }
 .advantages-title {
   font-weight: 500;
@@ -203,12 +230,13 @@ padding-top: 188px;
 }
 .container-our-team {
   /* max-width: 1128px; */
-  padding-top: 120px;
-  padding-bottom: 120px;
+
   justify-items: center;
 }
 .our-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .our-team-title {
   font-weight: 700;
@@ -220,15 +248,15 @@ padding-top: 188px;
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.our-team ul {
+.our-team-items {
   list-style-type: none;
   padding-left: 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .our-team-list {
 background-color: #FFFFFF;
-
+width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   
@@ -236,8 +264,10 @@ background-color: #FFFFFF;
 .our-team-list:not(:last-child) {
   margin-right: 24px;
 }
-.our-team-list-img {
-  margin-bottom: 32px;
+
+.our-team-person {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .list-title {
 font-weight: 500;
@@ -256,12 +286,10 @@ font-weight: 400;
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  margin-bottom: 32px;
 }
 .container-portfolio {
-  margin-top: 120px;
-  margin-bottom: 120px;
-  margin: 120px 141px;
+padding-top: 120px;
+  padding-bottom: 120px;
 }
 .our-portfolio-title{
     font-weight: 700;
@@ -280,10 +308,19 @@ font-weight: 400;
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+column-gap: 24px;
+row-gap: 48px;
   
 }
-
+.our-portfolio-list-item { 
+width: calc((100% - 48px) / 3);
+}
+.our-portfolio-list-contacts{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
 .our-portfolio-list .list-title {
 text-align: left;
 }
@@ -292,17 +329,18 @@ text-align: left;
 }
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .container-footer {
   display:block;
-  padding-top: 100px;
-  padding-bottom: 100px;
+ 
   margin-left: 141px;
   max-width: 294px;
   
 }
 .container-footer a {
   margin-bottom: 16px;
+  display: inline-block;
 }
  .logo-fs {
    font-weight: 700;
