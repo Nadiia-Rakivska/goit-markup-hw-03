@@ -288,8 +288,8 @@ font-weight: 400;
   text-align: center;
   color: #434455;
 }
-.container-portfolio {
-padding: 120px 0 120px 0;
+.our-portfolio{
+  padding: 120px 0 120px 0
 }
 .our-portfolio-title{
     font-weight: 700;
