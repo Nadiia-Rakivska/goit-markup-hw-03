@@ -16,7 +16,9 @@ p {
 img {
   display: block;
 }
-
+ul {
+  margin: 0;
+}
 .menu {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -43,7 +45,6 @@ img {
 .navigation-list {
   display: flex;
   padding: 0;
-  margin: 0;
 
 }
 
@@ -51,7 +52,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+
 }
 
 .logo {
@@ -152,8 +153,10 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding-bottom: 48px;
+ margin-bottom: 48px;
   max-width: 496px;
+  margin-right: auto;
+    margin-left: auto;
 }
 
 .servise {
@@ -205,6 +208,7 @@ img {
 .advantages-list {
   display: flex;
   padding-left: 0;
+
 
 }
 
@@ -260,6 +264,7 @@ img {
   list-style-type: none;
   padding-left: 0;
   display: flex;
+ 
 }
 
 .our-team-list {
@@ -325,6 +330,7 @@ img {
   column-gap: 24px;
   row-gap: 48px;
 
+
 }
 
 .our-portfolio-list-item {
@@ -335,7 +341,6 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .our-portfolio-list .list-title {
@@ -351,11 +356,7 @@ img {
   padding: 100px 0;
 }
 
-.container-footer {
-  display: block;
-  margin-left: 141px;
-  max-width: 294px;
-}
+
 
 .container-footer a {
   margin-bottom: 16px;
@@ -379,4 +380,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
